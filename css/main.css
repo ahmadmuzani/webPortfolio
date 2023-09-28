@@ -1,0 +1,319 @@
+@import url('https://fonts.cdnfonts.com/css/made-bruno');
+@import url('https://fonts.cdnfonts.com/css/pronema-serif');
+@import url('https://fonts.cdnfonts.com/css/andy-bear');
+@import url('https://fonts.cdnfonts.com/css/westiga');
+@import url('https://fonts.cdnfonts.com/css/fx');
+@import url('https://fonts.cdnfonts.com/css/f37-moon-black');
+
+body {
+    overflow-x: hidden;
+    background-image: linear-gradient(to left, #f8f3ff, #efebfe, #e3e4fd, #d5ddfd, #c5d7fc);
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+#nav-bar {
+    color: rgb(255, 255, 255);
+    font-family: 'Andy Bear', sans-serif;
+}
+
+.sec1 {
+    background-size: cover;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.sec2 {
+    background-size: cover;
+    min-height: 100vh;
+    overflow-x: hidden
+}
+
+/* .sec5 {
+    background-size: cover;
+    min-height: 100vh;
+    overflow-x: hidden
+} */
+
+.bg-circle {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 700px;
+    background: rgb(197, 215, 252);
+    background: linear-gradient(164deg, rgba(197, 215, 252, 1) 0%, rgba(172, 113, 255, 1) 100%);
+    clip-path: circle(670px at right -10px);
+
+}
+
+
+
+
+.intro {
+    font-family: 'F37 Moon', sans-serif;
+    color: white;
+    text-shadow: 3px 3px 3px rgb(138, 138, 138)
+}
+
+.intro-first {
+    font-family: 'FX Logo', sans-serif;
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 3px 3px rgb(138, 138, 138)
+}
+
+.intro-first .heading-1 {
+    margin-top: 50px;
+    font-size: 3rem;
+    line-height: 40px;
+
+    position: relative;
+}
+
+.intro-2 img {
+    width: 90%;
+    height: 25rem;
+}
+
+.intro-first .heading-2 {
+    font-size: 4rem;
+    line-height: 70px;
+}
+
+.nama {
+    font-size: 4rem;
+    line-height: 50px;
+}
+
+.heading-3,
+.heading-4 {
+    font-size: 1.5rem;
+}
+
+#nav-bar:hover {
+    box-shadow: inset 100px 0 0 0 #97b4ea;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    transition: color .6s ease-in-out, box-shadow .4s ease-in-out;
+}
+
+
+
+
+
+.stage svg:hover,
+.skill-img:hover {
+    transform: translateY(15px);
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+#project {
+    font-family: 'Westiga', sans-serif;
+    font-size: 4rem;
+    color: white;
+    text-shadow: 3px 3px 3px rgb(138, 138, 138);
+}
+
+.card-1,
+.card-2,
+.card-3 {
+    box-shadow: 10px 10px 10px rgb(92, 92, 92);
+
+}
+
+.carder {
+    max-width: 300px;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding: 0px;
+
+    border: 1px solid rgba(255, 255, 255, .25);
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.45);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+
+    backdrop-filter: blur(0px);
+}
+
+.text-card {
+    align-items: start;
+    padding: 20px;
+}
+
+.skill-img {
+    height: 10rem;
+    width: 10rem;
+    padding: 10px;
+    cursor: pointer;
+
+}
+
+/* @keyframes slide {
+    0% {
+        left: 0;
+        top: 0;
+    }
+
+    50% {
+        left: 244px;
+        top: 100px;
+    }
+
+    100% {
+        left: 488px;
+        top: 0;
+    }
+}
+
+.cloud-ig1:hover {
+    animation: slide 2s ease-in-out .5s infinite alternate;
+}
+
+.cloud-ig1:active {
+    animation-play-state: paused;
+} */
+
+
+
+
+#container .item {
+    width: 300px;
+    cursor: pointer;
+}
+
+
+#container .item .content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    padding: 2px;
+    border-radius: 4px;
+    background: #fff;
+    transform: rotate(0) scale(1);
+    transition: all 0.2s cubic-bezier(0.28, 0.05, 0.65, 0.97);
+
+}
+
+#container .item .content:after {
+    position: absolute;
+    bottom: -2px;
+    right: -2px;
+    content: "";
+    width: calc(100% + 4px);
+    height: 4px;
+    border-radius: 0 0 4px 4px;
+    transition: all 0.3s cubic-bezier(0.28, 0.05, 0.65, 0.97);
+}
+
+#container .item .previews {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#container .item .previews:nth-child(2) .preview-image {
+    right: 0;
+}
+
+#container .item .previews .preview-image {
+    width: 170px;
+    height: 210px;
+    transition: all 0.2s cubic-bezier(0.28, 0.05, 0.65, 0.97);
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    overflow: hidden;
+    border-radius: 4px;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.3);
+}
+
+#container .item .previews .preview-image img {
+    width: 140%;
+}
+
+#container .item:hover {
+    z-index: 5;
+}
+
+#container .item:hover .content {
+
+    transform: rotate(0) scale(1.2);
+    animation: shake 0.4s 1;
+    animation-delay: 0.4s;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s cubic-bezier(0.28, 0.05, 0.65, 0.97);
+}
+
+#container .item:hover .content:after {
+    width: 0;
+    transition: all 0.3s cubic-bezier(0.28, 0.05, 0.65, 0.97);
+}
+
+#container .item:hover .previews .preview-image {
+    transition: all 0.2s cubic-bezier(9, 5, 5, 7);
+    box-shadow: -8px 5px 30px 0 rgba(0, 0, 0, 0.2);
+}
+
+#container .item:hover .previews .preview-image:nth-child(1) {
+    transform: rotate(-6deg) translate(-230px, -150px);
+    transition-delay: 0.4s;
+    border: solid 3px rgb(255, 255, 255);
+}
+
+#container .item:hover .previews .preview-image:nth-child(2) {
+    transform: rotate(-10deg) translate(-250px, 30px);
+    transition-delay: 0.45s;
+    border: solid 3px rgb(255, 255, 255);
+
+}
+
+
+#container .item:hover .previews .preview-image:nth-child(3) {
+    transform: rotate(9deg) translate(350px, 110px);
+    transition-delay: 0.5s;
+    border: solid 3px rgb(255, 255, 255);
+
+}
+
+#container .item:hover .previews .preview-image:nth-child(4) {
+    transform: rotate(6deg) translate(390px, -90px);
+    transition-delay: 0.6s;
+    border: solid 3px rgb(255, 255, 255);
+
+}
+
+@keyframes shake {
+    0% {
+        transform: rotate(3deg) scale(1.2);
+    }
+
+    20% {
+        transform: rotate(-3deg) scale(1.2);
+    }
+
+    40% {
+        transform: rotate(3deg) scale(1.2);
+    }
+
+    60% {
+        transform: rotate(-3deg) scale(1.2);
+    }
+
+    80% {
+        transform: rotate(3deg) scale(1.2);
+    }
+
+    100% {
+        transform: rotate(0) scale(1.2);
+    }
+}
