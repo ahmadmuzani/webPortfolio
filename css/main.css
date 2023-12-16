@@ -4,6 +4,11 @@
 @import url('https://fonts.cdnfonts.com/css/westiga');
 @import url('https://fonts.cdnfonts.com/css/fx');
 @import url('https://fonts.cdnfonts.com/css/f37-moon-black');
+@import url('https://fonts.cdnfonts.com/css/nulshock');
+@import url('https://fonts.cdnfonts.com/css/bachelor-2');
+@import url('https://fonts.cdnfonts.com/css/hergika');
+@import url('https://fonts.cdnfonts.com/css/comme');
+
 
 body {
     overflow-x: hidden;
@@ -16,7 +21,7 @@ body::-webkit-scrollbar {
 
 #nav-bar {
     color: rgb(255, 255, 255);
-    font-family: 'Andy Bear', sans-serif;
+    font-family: 'Bachelor', sans-serif;
 }
 
 .sec1 {
@@ -39,7 +44,6 @@ body::-webkit-scrollbar {
 
 .bg-circle {
     position: absolute;
-    z-index: 1;
     top: 0;
     left: 0;
     width: 100%;
@@ -50,38 +54,422 @@ body::-webkit-scrollbar {
 
 }
 
+@media only screen and (max-width: 500px) {
+    .text-benaran {
+        position: relative;
+
+        width: 600px;
+    }
+
+    .heading-benaran {
+        color: white;
+        text-shadow: 3px 3px 3px rgb(138, 138, 138);
+        font-family: 'Bachelor', sans-serif;
+        margin-top: 190px;
+        z-index: 1;
+    }
+
+    .title-benaran {
+        font-size: 0.5rem;
+        color: white;
+        text-shadow: 2px 2px 2px rgb(138, 138, 138);
+    }
+
+    .start-benaran {
+        color: white;
+        text-shadow: 2px 2px 2px rgb(138, 138, 138);
+    }
+
+    .tech-benaran {
+        color: white;
+        text-shadow: 2px 2px 2px rgb(138, 138, 138);
+    }
+
+    .text-volleyball {
+        position: relative;
+
+        width: 600px;
+    }
+
+    .heading-volleyball {
+        color: white;
+        text-shadow: 3px 3px 3px rgb(138, 138, 138);
+        font-family: 'Bachelor', sans-serif;
+        margin-top: 190px;
+        z-index: 1;
+    }
+
+    .title-volleyball {
+        font-size: 0.5rem;
+        color: white;
+        text-shadow: 2px 2px 2px rgb(138, 138, 138);
+    }
+
+    .start-volleyball {
+        color: white;
+        text-shadow: 2px 2px 2px rgb(138, 138, 138);
+    }
+
+    .tech-volleyball {
+        color: white;
+        text-shadow: 2px 2px 2px rgb(138, 138, 138);
+    }
+}
+
+/* Gaya untuk perangkat mobile (lebar maksimum 767px) */
+@media only screen and (max-width: 896px) {
+    .intro-2 img {
+        width: 90%;
+        height: 20rem;
+    }
+
+    .intro-first .heading-1 {
+        margin-top: 10px;
+        font-size: 1.5rem;
+        line-height: 0px;
+
+        position: relative;
+    }
+
+    .intro-first .heading-2 {
+        font-size: 2.1rem;
+        line-height: 50px;
+    }
+
+    .intro .heading-2 {
+        font-size: 2rem;
+        line-height: 50px;
+    }
+
+    .intro .heading-4 {
+        font-size: 1.2rem;
+    }
+
+    .intro .heading-1 {
+        margin-top: 10px;
+        font-size: 2rem;
+        line-height: 10px;
+        position: relative;
+    }
+
+    .intro .heading-4 {
+        font-size: 1.2rem;
+        font-family: 'Hergika', sans-serif;
+    }
+
+    .stage svg {
+        width: 70px;
+        height: 70px;
+    }
+
+    .benaran-project {
+        position: absolute;
+        z-index: 1;
+        width: 300px;
+        margin-top: 15px;
+    }
+
+    .volleyball-project {
+        position: absolute;
+        z-index: 1;
+        width: 300px;
+    }
+
+    #svg-blur {
+        position: absolute;
+        backdrop-filter: blur(3px);
+        -webkit-backdrop-filter: 3px;
+        box-shadow: 4px 4px 30px rgb(113, 113, 113);
+        border-radius: 20px;
+        width: 300px;
+        height: 190px;
+    }
+
+    .svgX {
+        position: absolute;
+        /* left: 90px; */
+        top: -10px;
+        left: -20px;
+        z-index: -1;
+    }
+
+    .svg-candy {
+        position: absolute;
+        left: 100px;
+        top: -50px;
+        width: 23rem;
+        height: 17rem;
+        z-index: -1;
+    }
+
+    .svg-volleyball1 {
+        position: absolute;
+        /* left: 90px; */
+        width: 8rem;
+        margin-top: 120px;
+        z-index: -1;
+    }
+
+    .svg-volleyball2 {
+        position: absolute;
+        width: 18rem;
+        bottom: -90px;
+        z-index: -1;
+    }
+
+    .heading-volleyball {
+        position: relative;
+        color: white;
+        text-shadow: 3px 3px 3px rgb(138, 138, 138);
+        font-family: 'Bachelor', sans-serif;
+        font-size: 2rem;
+        z-index: 1;
+    }
+
+    .title-volleyball {
+        font-size: 1.2rem;
+        color: white;
+        text-shadow: 2px 2px 2px rgb(138, 138, 138);
+    }
+
+    .start-volleyball {
+        font-size: 1.1rem;
+        color: white;
+        text-shadow: 2px 2px 2px rgb(138, 138, 138);
+    }
+
+    .tech-volleyball {
+        font-size: 1.2rem;
+        color: white;
+        text-shadow: 2px 2px 2px rgb(138, 138, 138);
+    }
+
+    .heading-benaran {
+        position: relative;
+        color: white;
+        text-shadow: 3px 3px 3px rgb(138, 138, 138);
+        font-family: 'Bachelor', sans-serif;
+        font-size: 2rem;
+        z-index: 1;
+    }
+
+    .title-benaran {
+        font-size: 1.2rem;
+        color: white;
+        text-shadow: 2px 2px 2px rgb(138, 138, 138);
+    }
+
+    .start-benaran {
+        font-size: 1.1rem;
+        color: white;
+        text-shadow: 2px 2px 2px rgb(138, 138, 138);
+    }
+
+    .tech-benaran {
+        font-size: 1.2rem;
+        color: white;
+        text-shadow: 2px 2px 2px rgb(138, 138, 138);
+    }
+
+}
+
+/* Gaya untuk perangkat desktop (lebar minimum 768px) */
+@media only screen and (min-width: 900px) {
+    .intro-2 img {
+        width: 100%;
+        height: 40rem;
+        margin-left: 70px;
+        position: relative;
+        margin-top: -60px;
+    }
+
+    .heading-1 {
+        font-size: 4rem;
+        line-height: 30px;
+    }
+
+    .heading-2 {
+        font-size: 4rem;
+        line-height: 80px;
+    }
+
+    .intro-first .heading-1 {
+        margin-top: 50px;
+        font-size: 3rem;
+        line-height: 30px;
+
+        position: relative;
+    }
+
+    .intro-first .heading-2 {
+        font-size: 4rem;
+        line-height: 80px;
+    }
+
+    .intro .heading-2 {
+        font-size: 4rem;
+        line-height: 80px;
+    }
+
+    .intro .heading-4 {
+        font-size: 1.2rem;
+    }
+
+    .intro .heading-1 {
+        margin-top: 50px;
+        font-size: 3rem;
+        line-height: 30px;
+
+        position: relative;
+    }
+
+    .svgX {
+        position: absolute;
+        /* left: 90px; */
+        top: -10px;
+        left: -20px;
+        z-index: -1;
+    }
+
+    .svg-candy {
+        position: absolute;
+        left: 200px;
+        top: -50px;
+        z-index: -1;
+    }
+
+    .svg-volleyball1 {
+        position: absolute;
+        /* left: 90px; */
+        bottom: -120px;
+        left: -40px;
+        z-index: -1;
+    }
+
+    .svg-volleyball2 {
+        position: absolute;
+        left: 200px;
+        top: -50px;
+        z-index: -1;
+    }
+
+    .benaran-project {
+        position: absolute;
+        z-index: 1;
+        width: 602px;
+        margin-top: 15px;
+    }
+
+    .volleyball-project {
+        position: absolute;
+        z-index: 1;
+        width: 602px;
+        margin-top: -25px;
+    }
+
+    #svg-blur {
+        position: absolute;
+        backdrop-filter: blur(3px);
+        -webkit-backdrop-filter: 3px;
+        box-shadow: 4px 4px 30px rgb(113, 113, 113);
+        border-radius: 20px;
+        width: 603px;
+        height: 358px;
+    }
+
+    .heading-benaran {
+        left: 40%;
+        position: absolute;
+        color: white;
+        text-shadow: 3px 3px 3px rgb(138, 138, 138);
+        font-family: 'Bachelor', sans-serif;
+        font-size: 4rem;
+        z-index: 1;
+    }
+
+    .title-benaran {
+        margin-top: 80px;
+        font-size: 2.3rem;
+        color: white;
+        text-shadow: 2px 2px 2px rgb(138, 138, 138);
+    }
+
+    .start-benaran {
+        color: white;
+        text-shadow: 2px 2px 2px rgb(138, 138, 138);
+    }
+
+    .tech-benaran {
+        color: white;
+        text-shadow: 2px 2px 2px rgb(138, 138, 138);
+    }
+
+    .heading-volleyball {
+        position: absolute;
+        color: white;
+        text-shadow: 3px 3px 3px rgb(138, 138, 138);
+        font-family: 'Bachelor', sans-serif;
+        font-size: 4rem;
+        z-index: 1;
+    }
+
+    .title-volleyball {
+        margin-top: 80px;
+        font-size: 2.3rem;
+        color: white;
+        text-shadow: 2px 2px 2px rgb(138, 138, 138);
+    }
+
+    .start-volleyball {
+        color: white;
+        text-shadow: 2px 2px 2px rgb(138, 138, 138);
+    }
+
+    .tech-volleyball {
+        color: white;
+        text-shadow: 2px 2px 2px rgb(138, 138, 138);
+    }
+
+    .wrapper-volleyball {
+        position: relative;
+
+    }
+
+}
+
+
 
 
 
 .intro {
-    font-family: 'F37 Moon', sans-serif;
     color: white;
-    text-shadow: 3px 3px 3px rgb(138, 138, 138)
+    text-shadow: 2px 2px 2px rgb(138, 138, 138)
+}
+
+.heading-1,
+.heading-2,
+.heading-3 {
+    font-family: 'Bachelor', sans-serif;
+}
+
+.heading-4 {
+    text-shadow: 1px 1px 1px rgb(138, 138, 138);
 }
 
 .intro-first {
-    font-family: 'FX Logo', sans-serif;
+    font-family: 'Bachelor', sans-serif;
     color: rgb(255, 255, 255);
-    text-shadow: 3px 3px 3px rgb(138, 138, 138)
+    text-shadow: 2px 2px 2px rgb(138, 138, 138)
 }
 
-.intro-first .heading-1 {
-    margin-top: 50px;
-    font-size: 3rem;
-    line-height: 40px;
-
-    position: relative;
+.footer {
+    font-family: 'Comme', sans-serif;
+    text-shadow: 1px 1px 1px rgb(138, 138, 138)
 }
 
-.intro-2 img {
-    width: 90%;
-    height: 25rem;
-}
 
-.intro-first .heading-2 {
-    font-size: 4rem;
-    line-height: 70px;
-}
+
+
 
 .nama {
     font-size: 4rem;
@@ -90,7 +478,7 @@ body::-webkit-scrollbar {
 
 .heading-3,
 .heading-4 {
-    font-size: 1.5rem;
+    font-size: 1.rem;
 }
 
 #nav-bar:hover {
@@ -113,7 +501,7 @@ body::-webkit-scrollbar {
 
 
 #project {
-    font-family: 'Westiga', sans-serif;
+    font-family: 'Bachelor', sans-serif;
     font-size: 4rem;
     color: white;
     text-shadow: 3px 3px 3px rgb(138, 138, 138);

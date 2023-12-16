@@ -19,8 +19,10 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous"> -->
     <title>Ahmad Muzani's Website</title>
-
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
 </head>
 
@@ -30,13 +32,13 @@
 
         <nav class="navbar navbar-expand-lg" style="z-index: 1;">
             <div class=" container">
-                <a class="navbar-brand " href="" style="font-family: 'Westiga', sans-serif; font-size: 1.7rem; color: white; text-shadow: 3px 3px 3px rgb(138, 138, 138);
+                <a class="navbar-brand " href="" style="font-family: 'Nulshock', sans-serif; font-size: 1.7rem; color: white; text-shadow: 3px 3px 3px rgb(138, 138, 138);
                 "><b class="text_header">Ahmad
                         Muzani's</b></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                <button class="navbar-toggler" id="button-nav" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
                     aria-label="Toggle navigation">
-                    <h1><i class="bi bi-emoji-smile-upside-down" style="color: white;"></i></h1>
+                    <h1><i id="smile-nav" class="bi bi-emoji-smile-upside-down" style="color: white;"></i></h1>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-center">
@@ -57,6 +59,9 @@
                         <li class="nav-item">
                             <a class="nav-link" id="nav-bar" href="#sec5">About</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="nav-bar" href="#sec6">Contact Me</a>
+                        </li>
                 </div>
                 </li>
                 </ul>
@@ -70,10 +75,10 @@
                 <div class="row">
                     <div class="col-md-6 intro-first" data-aos="fade-right">
                         <b>
-                            <p class="heading-1">Hallo <strong
+                            <p class="heading-1">Hallo there <strong
                                     style="font-family: 'Courier New', Courier, monospace;">...</strong></p>
-                            <p class="heading-2">My Name is Ahmad Muzani</p>
-                            <p class="heading-3">Web Developer and Gamers</p>
+                            <p class="heading-2">My Name is <br> Ahmad Muzani</p>
+                            <p class="heading-3">Full Stack Web Developer</p>
                             <p>
                                 <a href="https://www.instagram.com/muzani_ahmad/" class="stage">
                                     <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100"
@@ -517,62 +522,75 @@
                         </b>
                     </div>
                     <div class="col-md-6 text-center intro-2" id="intro-2" data-aos="fade-left">
-                        <img name="ty" src="/assets/3dpro-removebg-preview.png" alt="">
+                        <img name="ty" src="/assets/person2.png" alt="">
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <section class="sec2" id="sec2">
-        <div class="container mb-5" style="">
+        <div class="container  mb-5" style="position: relative; height: 100vh;">
             <div class="container">
-                <h2 class="text-center" data-aos="zoom-in" id="project"><b>Project</b></h2>
-                <div class="row">
-                    <div class="col-md-4 d-flex justify-content-center mb-4">
-                        <div class="carder" data-aos="fade-right">
-                            <img src="/assets/project/Screen Shot 2023-09-21 at 22.32.05.png"
-                                style="border-radius: 20px 20px 0 0;" class="card-img-top" alt="...">
-                            <div class="text-card">
-                                <strong>Website Top Up Game</strong>
-                                <p style="font-size: 15px;">
-                                    A game top-up website is an online platform that allows players to easily add
-                                    diamonds or other items to their games.</p>
-                                <strong>Technology</strong>
-                                <p>Laravel, JavaScript, Jquery, Ajax, Bootstrap, Css.</p>
-                            </div>
-                            </p>
+                <h2 class="text-center" data-aos="zoom-in" id="project">Project</h2>
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <img class="svgX" src="assets/purple cross in circle.svg" alt="">
+                            <img class="svg-candy" src="assets/reka-reka.svg" alt="">
+                            <img class="benaran-project" src="assets/download (7).png" alt="">
+                            <svg id="svg-blur" viewBox="0 0" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g filter="url(#filter0_b_175_756)">
+                                    <rect width="800" height="358" rx="20" fill="#8A53FF" fill-opacity="0.22" />
+                                </g>
+                                <defs>
+                                    <filter id="filter0_b_175_756" x="-5.8" y="-5.8" width="614.6" height="369.6"
+                                        filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="2.9" />
+                                        <feComposite in2="SourceAlpha" operator="in"
+                                            result="effect1_backgroundBlur_175_756" />
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_175_756"
+                                            result="shape" />
+                                    </filter>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="col-md-6 max-width-500 text-benaran">
+                            <h1 class="heading-benaran">Benaran Gaming</h1>
+                            <h2 class="title-benaran">Website Top Up Game Online</h2>
+                            <h3 class="start-benaran">Aug. 2023</h3>
+                            <h4 class="tech-benaran">Tech. <br>PHP Framework Laravel, Javascript, CSS, Bootstrap,
+                                jQuery, AJAX, MySQL.</h4>
                         </div>
                     </div>
-                    <div class="col-md-4 d-flex justify-content-center mb-4">
-                        <div class="carder" data-aos="zoom-in">
-                            <img src="/assets/project/Screen Shot 2023-09-22 at 00.59.54.png"
-                                style="border-radius: 20px 20px 0 0;" class="card-img-top" alt="...">
-                            <div class="text-card">
-                                <strong>Digital Scoreboard Volleyball</strong>
-                                <p style="font-size: 15px;">
-                                    A website scoreboard that can count match scores, along with statistics, and then
-                                    store them in a database for display to website users.</p>
-                                <strong>Technology</strong>
-                                <p>Laravel, JavaScript, Jquery, Ajax, Bootstrap, Css.</p>
-                            </div>
-                            </p>
+                    <div class="row" style="margin-top: 120px;">
+                        <div class="col text-volleybal">
+                            <h1 class="heading-volleyball">Digital Scoreboard</h1>
+                            <h2 class="title-volleyball">Website Top Up Game Online</h2>
+                            <h3 class="start-volleyball">Aug. 2023</h3>
+                            <h4 class="tech-volleyball">Tech. <br>PHP Framework Laravel, Javascript, CSS, Bootstrap,
+                                jQuery, AJAX, MySQL.</h4>
                         </div>
-                    </div>
-                    <div class="col-md-4 d-flex justify-content-center mb-4">
-                        <div class="carder" data-aos="fade-left">
-                            <img src="/assets/project/Screen Shot 2023-09-22 at 01.15.20.png"
-                                style="border-radius: 20px 20px 0 0;" class="card-img-top" alt="...">
-                            <div class="text-card">
-                                <strong>Landing Page</strong>
-                                <p style="font-size: 15px;">
-                                    A landing page is a single web page designed specifically for a particular purpose,
-                                    such as promoting a product or service, or directing visitors to take specific
-                                    actions, such as making a
-                                    purchase.</p>
-                                <strong>Technology</strong>
-                                <p>Bootstrap, Css.</p>
-                            </div>
-                            </p>
+                        <div class="col wrapper-volleyball">
+                            <img class="svg-volleyball1" src="assets/pinksquere.svg" alt="">
+                            <img class="svg-volleyball2" src="assets/plastic.svg" alt="">
+                            <img class="volleyball-project" src="assets/volleybal.showcase.png" alt="">
+                            <svg id="svg-blur" viewBox="0 0" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g filter="url(#filter0_b_175_756)">
+                                    <rect width="800" height="358" rx="20" fill="#8A53FF" fill-opacity="0.22" />
+                                </g>
+                                <defs>
+                                    <filter id="filter0_b_175_756" x="-5.8" y="-5.8" width="614.6" height="369.6"
+                                        filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="2.9" />
+                                        <feComposite in2="SourceAlpha" operator="in"
+                                            result="effect1_backgroundBlur_175_756" />
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_175_756"
+                                            result="shape" />
+                                    </filter>
+                                </defs>
+                            </svg>
                         </div>
                     </div>
                 </div>
@@ -582,7 +600,7 @@
             <div class="container">
                 <div class="container text-center">
                     <div class="row d-flex">
-                        <h2 class="text-center" data-aos="zoom-in" id="project"><b>Skill</b></h2>
+                        <h2 class="text-center" data-aos="zoom-in" id="project">Skill</h2>
                         <div data-aos="zoom-in">
                             <img class="skill-img" id="skill-bootstrap"
                                 src="/assets/skill/bootstrap-icon-b-letter-logo_781017-7-removebg-preview.png" alt="">
@@ -610,8 +628,8 @@
         <section class="sec4" id="sec4">
             <div class="container">
                 <div class="container text-center">
-                    <h2 class="text-center" data-aos="zoom-in" id="project"><b>Education</b></h2>
-                    <div class="row d-flex">
+                    <h2 class="text-center" data-aos="zoom-in" id="project">Education</h2>
+                    <div class="row d-flex text-white" style="text-shadow: 1px 1px 1px rgb(138, 138, 138);">
                         <div class="col-md-4 d-flex justify-content-center mb-4">
                             <div class="carder" data-aos="fade-right">
                                 <img src="/assets/education/6523865.jpg"
@@ -659,24 +677,23 @@
         </section>
         <section class="sec5" id="sec5">
             <div class="container">
-                <div class="container text-center">
+                <div class="container">
                     <div class="row d-flex">
-                        <h2 class="text-center" data-aos="zoom-in" id="project"><b>About</b></h2>
-                        <div class="col-md-6 mt-2 text-center intro" id="intro" data-aos="fade-left">
-                            <b>
-                                <p class="heading-1" style="font-size: 4rem; line-height: 10px;">Hallo..</p>
-                                <p class="heading-2" style="font-size: 5rem; line-height: 80px;">My Name is <strong
-                                        class="glitch">Ahmad Muzani</strong></p>
-                                <p class="heading-3" style="font-size: 2rem;">Web Developer, Gamers</p>
-                                <p class="heading-4" style="font-size: 1.4rem;">
-                                    I am a full stack developer specializing in back-end and front-end development, I
-                                    have
-                                    <span style="font-family: roboto;">2</span>
-                                    years experience in web development, I have back-end skills in php native, framework
-                                    Laravel, MySQL. i
-                                    also have front-end skills in javascript, jquery, css, bootstrap, tailwind.
-                                </p>
-                            </b>
+                        <h2 class="text-center" data-aos="zoom-in" id="project">About</h2>
+                        <div class="col-md-6 mt-2 intro" id="intro" data-aos="fade-left">
+
+                            <p class="heading-1">Hallo..</p>
+                            <p class="heading-2">My Name is <strong class="glitch">Ahmad Muzani</strong></p>
+                            <p class="heading-3">Web Developer, Gamers</p>
+                            <p class="heading-4">
+                                I am a full stack developer specializing in back-end and front-end development, I
+                                have
+                                <span style="font-family: roboto;">2</span>
+                                years experience in web development, I have back-end skills in php native, framework
+                                Laravel, MySQL. i
+                                also have front-end skills in javascript, jquery, css, bootstrap, tailwind.
+                            </p>
+
                         </div>
                         <div class="col-md-6 d-flex justify-content-center" id="" data-aos="fade-left">
                             <div data-aos="zoom-in" id="container">
@@ -715,7 +732,7 @@
         <section class="sec4" id="sec4">
             <div class="container">
                 <div class="container">
-                    <h2 class="text-center" data-aos="zoom-in" id="project"><b>Contact Me</b></h2>
+                    <h2 class="text-center" data-aos="zoom-in" id="project">Contact Me</h2>
                     <div class="row ">
                         <div class="col-md-6 mb-4" data-aos="fade-right" style="margin-top: 90px;">
                             <form id="form" action="https://formspree.io/f/xqkvgkbv" method="POST">
@@ -751,10 +768,10 @@
         </section>
 
     </section>
-    <section>
+    <section class="footer">
         <div class="container">
             <div class="container">
-                <footer class="text-black text-center text-lg-start">
+                <footer class="text-white text-center text-lg-start">
                     <!-- Grid container -->
                     <div class="container p-4">
                         <!--Grid row-->
@@ -823,7 +840,9 @@
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="/js/main.js"></script>
     <script src="/js/aos.js"></script>
-
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>

@@ -14,9 +14,19 @@
 //     }).catch((e) => alert("error!"))
 // })
 
-
+// function toggle() {
+//     const icon = document.getElementById('smile-nav');
+//     icon.classList.remove('-upside-down');
+// }
 
 $(document).ready(function () {
+    $('#button-nav').click(function () {
+        $('#button-nav i').toggleClass("bi-emoji-smile-upside-down");
+        $('#button-nav i').toggleClass("bi-emoji-smile");
+    });
+
+
+
     $('#skill-bootstrap').click(function () {
         Swal.fire({
             title: 'Bootstrap',
